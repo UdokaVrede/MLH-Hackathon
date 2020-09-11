@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<title>Home | World App</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+
+  <h1 class='header_text'>World App</h1>
+  <h3 class='subheader_text'>Enter a city and/or country and learn about it.</h3>
+
+  <div class="searchbox">
+    <form class="" action="index.html" method="">
+      <label for="city">Enter a City:</label>
+      <input type="text" name="city" value="" placeholder="i.e. Buenos Aires"><br>
+      <label for="city">Enter a Country:</label>
+      <input type="text" name="country" value="" placeholder="i.e. Argentina"><br>
+      <button type="submit" name="button">Search</button>
+    </form>
+  </div>
+
+</div>
+
+{% endblock %}

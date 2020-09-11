@@ -1,0 +1,30 @@
+body {
+  background-color: #DBFCFF;
+  font-family: 'Arial', sans-serif;
+  color: #12100E;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.header_text {
+  font-size: 56px;
+  color: #3F826D;
+  font-family: 'Nunito', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1px;
+}
+
+.subheader_text {
+  font-size: 16px;
+  color: #3F826D;
+  font-family: 'Nunito', 'Arial', sans-serif;
+  font-weight: 400;
+}
+
+.searchbox {
+  width: 400px;
+  margin: 0px auto;
+}
