@@ -1,0 +1,29 @@
+import csv
+import json
+
+def create_dicitonary():
+    with open('Countries of the world.csv') as file:
+        data = csv.reader(file)
+        country_list = []
+        data_list = []
+        for row in data:
+            country = row[0]
+            data_set = row[1::]
+            country_list.append(country)
+            data_list.append(data_set)
+        #print(data_list)
+        #print(country_list)
+
+        complete_dictionary = {}
+        for i in range(len(country_list)):
+            complete_dictionary.update({country_list[i] : data_list[i]})
+        #print(complete_dictionary)
+    with open('Country data dictionary.json', 'w') as fp:
+        json.dump(complete_dictionary, fp)
+        
+if __name__ == '__main__':
+    create_dicitonary()
+
+
+
+
