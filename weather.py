@@ -5,8 +5,7 @@ BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 
 #this should be locations selected by the user......VERY IMPORTANT
 Location = "singapore"
-API_KEY = "be827473936e67930f3f7fc87cda900a"
-
+API_KEY = 
 URL = BASE_URL + "q=" + Location + "&appid=" + API_KEY
 
 # HTTP request
