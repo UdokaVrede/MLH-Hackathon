@@ -1,11 +1,14 @@
 # importing requests,json and datetime
 import requests, json, datetime
+from decouple import config
+
 # base URL
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 
 #this should be locations selected by the user......VERY IMPORTANT
 Location = "singapore"
-API_KEY = 
+API_USERNAME = config('user')
+API_KEY = config('key')
 URL = BASE_URL + "q=" + Location + "&appid=" + API_KEY
 
 # HTTP request
@@ -27,7 +30,7 @@ if response.status_code == 200:
    pressure = main['pressure']
    # getting the timezones
    timeZone = data['timezone']
-   zone = res = datetime.timedelta(seconds = timeZone)
+   zone = datetime.timedelta(seconds = timeZone)
 
  #  weather report
    report = data['weather'][0]
